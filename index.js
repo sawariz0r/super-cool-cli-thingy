@@ -1,8 +1,8 @@
-const { getSize, getInstructions, getStartPos } = require("./helpers/argvParse.js");
-const visualizeGrid = require("./helpers/visualizeGrid.js")
+const { getSize, getInstructions, getStartPos } = require("./utils/argvParse.js");
+const visualizeGrid = require("./utils/visualizeGrid.js")
 
-const Object = require("./classes/Object.js");
-const Table = require("./classes/Table.js");
+const Object = require("./models/Object.js");
+const Table = require("./models/Table.js");
 
 const size = getSize(process.argv);
 const instructions = getInstructions(process.argv);
@@ -19,7 +19,7 @@ o.onMove = (move) => {
    * Created a way to visually
    * make sure everything worked
    * properly. Blame that it's
-   * sunday evening already
+   * sunday evening already 
    */
 
   // visualizeGrid(t, move)
