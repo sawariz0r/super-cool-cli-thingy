@@ -2,11 +2,13 @@
 
 This is a cli program that takes instructions in a string like ```4, 5, 3, 3, 1, 1, 1,```
 The first two are the dimensions of the grid and the rest is instructions on how to navigate the grid.
+```
 0 exits the simulation
 1 takes a step forward
 2 takes a step backwards
 3 rotates clockwise
 4 rotates counter clockwise
+```
 
 ## Installation
 
