@@ -11,6 +11,15 @@ The first two are the dimensions of the grid and the rest is instructions on how
 4 rotates counter clockwise
 ```
 
+## Architecture/structure
+
+As for using a well known architecture, I have almost only been working
+with Frontend(React, vanilla html/css/js) and Node(express, etc) projects.
+So I'm usually just subjected to the "default" structures of these frameworks (routes, components, tests, etc).
+
+Which most likely falls under the functional programming architecture.
+
+
 ## Installation
 
 You need to have Node.js installed on your system.
