@@ -29,7 +29,9 @@ o.onMove = (move) => {
    * steps taken.
    * If I had more time I would
    * have loved to make this
-   * prettier!
+   * prettier.
+   * Uncomment the line under 
+   * to see it in action!
    */
   //visualizeGrid(t, move)
 
