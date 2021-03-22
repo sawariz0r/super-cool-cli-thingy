@@ -1,6 +1,6 @@
 # Move an object in a grid/table
 
-This is a cli program that takes instructions in a string like ```4, 5, 3, 3, 1, 1, 1,```
+This is a cli program that takes instructions in a string like `4, 5, 3, 3, 1, 1, 1,`
 The first two are the dimensions of the grid and the rest is instructions on how to navigate the grid.
 
 ```
@@ -19,7 +19,6 @@ So I'm usually just subjected to the "default" structures of these frameworks (r
 
 Which most likely falls under the functional programming architecture.
 
-
 ## Installation
 
 You need to have Node.js installed on your system.
@@ -29,12 +28,14 @@ I initialized a package.json at first, but decided not to use external libraries
 
 navigate to the project folder using command line.
 example with instructions provided:
+
 ```javascript
 node index.js 4, 5, 1, 1, 3, 1, 3, 1
 > [ 2, 2 ]
 ```
 
 example with NO instructions provided:
+
 ```javascript
 node index.js 4, 5, 1, 1
 > "What's your instructions, sir?"
@@ -43,7 +44,9 @@ node index.js 4, 5, 1, 1
 ```
 
 ## Contributing
+
 Well.. If you really, really, really want you're welcome to open a pull request.
 
 ## License
+
 None

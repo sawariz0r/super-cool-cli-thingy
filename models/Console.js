@@ -1,12 +1,12 @@
 const rl = require("readline").createInterface({
   input: process.stdin,
-  output: process.stdout
+  output: process.stdout,
 });
 
 class Console {
   async error(msg) {
     return msg;
-  }  
+  }
 
   async awaitInput(msg) {
     let response;
@@ -15,15 +15,15 @@ class Console {
     rl.prompt();
 
     return new Promise((resolve, reject) => {
-      rl.on("line", input => {
+      rl.on("line", (input) => {
         response = input;
         rl.close();
-      })
+      });
 
       rl.on("close", () => {
         resolve(response);
-      })
-    })
+      });
+    });
   }
 
   async ask(msg) {
@@ -31,8 +31,8 @@ class Console {
   }
 
   tell(msg) {
-    process.stdout.write(msg + "\n")
-    rl.close()
+    process.stdout.write(msg + "\n");
+    rl.close();
   }
 }
 

@@ -1,4 +1,3 @@
-
 const Object = require("./models/Object.js");
 const Table = require("./models/Table.js");
 const Console = require("./models/console.js");
@@ -25,12 +24,12 @@ const o = new Object({ position: startingPos });
 o.onMove = (move) => {
   /**
    * Created a super simple
-   * way to visualize the 
+   * way to visualize the
    * steps taken.
    * If I had more time I would
    * have loved to make this
    * prettier.
-   * Uncomment the line under 
+   * Uncomment the line under
    * to see it in action!
    */
   //visualizeGrid(t, move)
@@ -53,7 +52,7 @@ const hasInstructions = instructions.length > 0;
  * If the instructions were provided when
  * running the program in the cli,
  * then we skip the asking step and just
- * power through the instructions 
+ * power through the instructions
  * eg. "node index.js 4, 4, 1, 1, 3, 1, 1"
  */
 if (hasInstructions) {
@@ -72,7 +71,7 @@ if (hasInstructions) {
  * then we ask for the instructions
  * eg. "node index.js 4, 4, 1, 1"
  * CLI: "What's your instructions, sir?"
- * - WAITING FOR INPUT - 
+ * - WAITING FOR INPUT -
  * user types: 3, 1, 3, 1, 2
  */
 if (!hasInstructions) {
@@ -84,7 +83,7 @@ if (!hasInstructions) {
       // Prints the result
       console.log(o.getPosition());
 
-    // end of program
+      // end of program
       process.exit();
     });
 }

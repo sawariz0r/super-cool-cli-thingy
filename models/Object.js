@@ -127,16 +127,16 @@ class Object {
    */
 
   handleInstructions(instructions) {
-    instructions.forEach(instruction => {
+    instructions.forEach((instruction) => {
       this.handleInstruction(instruction);
-    })
+    });
   }
 
   /**
    * Perhaps over-engineered or could be
    * written in a tidier manner,
    * but at least it's very clear what's
-   * going on. 
+   * going on.
    */
   handleInstruction(number) {
     switch (number) {
