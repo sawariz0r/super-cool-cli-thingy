@@ -10,8 +10,9 @@ module.exports = (...fns) => {
  * as I was either thinking to build a middleware
  * class or simply compose the functions together.
  * But as I stated somewhere else, if I had more
- * brainpower I would build a middleware handler
- * and hook that onto the Object class (or any
+ * brainpower on this sunday evening
+ * I would build a middleware handler and
+ * hook that onto the Object class (or any
  * other classes that could use middleware
  * functionality!).
  */
