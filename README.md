@@ -46,6 +46,15 @@ node index.js 4, 5, 1, 1
 > [ 2, 2 ]
 ```
 
+example with NO instructions or starting position provided:
+
+```javascript
+node index.js 4, 5
+> "What's your instructions, sir?"
+3, 1, 3, 1
+> [ 2, 2 ]
+```
+
 ## Contributing
 
 Well.. If you really, really, really want you're welcome to open a pull request.
