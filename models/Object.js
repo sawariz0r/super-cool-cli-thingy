@@ -125,6 +125,19 @@ class Object {
    * as clean as possible, I moved the logic
    * here and just call this method there.
    */
+
+  handleInstructions(instructions) {
+    instructions.forEach(instruction => {
+      this.handleInstruction(instruction);
+    })
+  }
+
+  /**
+   * Perhaps over-engineered or could be
+   * written in a tidier manner,
+   * but at least it's very clear what's
+   * going on. 
+   */
   handleInstruction(number) {
     switch (number) {
       case 0:

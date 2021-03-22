@@ -28,9 +28,18 @@ I initialized a package.json at first, but decided not to use external libraries
 ## Usage
 
 navigate to the project folder using command line.
-example:
+example with instructions provided:
 ```javascript
-node index.js 4, 5, 3, 3, 1, 1, 1, 1
+node index.js 4, 5, 1, 1, 3, 1, 3, 1
+> [ 2, 2 ]
+```
+
+example with NO instructions provided:
+```javascript
+node index.js 4, 5, 1, 1
+> "What's your instructions, sir?"
+3, 1, 3, 1
+> [ 2, 2 ]
 ```
 
 ## Contributing

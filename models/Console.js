@@ -3,17 +3,6 @@ const rl = require("readline").createInterface({
   output: process.stdout
 });
 
-/**
- * This class is obsolete, as I was thinking
- * that the user might want to use the cli
- * more like a game, where you ask and wait
- * for an answer. 
- * So I was thinking a polite butler-persona
- * who asked questions and replied. Then I 
- * read the instructions again and moved on
- * from this. I'll just leave it here :)
- */
-
 class Console {
   async error(msg) {
     return msg;
@@ -37,9 +26,8 @@ class Console {
     })
   }
 
-  async ask() {
-    const input = await this.awaitInput("What's your orders, sir?\n");
-    console.log(input);
+  async ask(msg) {
+    return await this.awaitInput(msg + "\n");
   }
 
   tell(msg) {
