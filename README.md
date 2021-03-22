@@ -1,7 +1,10 @@
 # Move an object in a grid/table
 
 This is a cli program that takes instructions in a string like `4, 5, 3, 3, 1, 1, 1,`
-The first two are the dimensions of the grid and the rest is instructions on how to navigate the grid.
+The 2 first are the dimensions of the grid, 2 after that is starting position and (optional) the rest is instructions on how to navigate the grid. 
+
+If you don't provide starting position, it defaults to 0, 0.
+And if you don't provide instructions - the CLI will prompt you for these.
 
 ```
 0 exits the simulation
