@@ -9,8 +9,11 @@ module.exports = {
     return { height: result[1], width: result[0] };
   },
   getStartPos: (argv) => {
-    const result = argv
-      .slice(4, 6)
+    const startPos = argv.slice(4, 6);
+    console.log(startPos);
+    if (startPos.length === 0) return [];
+
+    const result = startPos
       .join("")
       .split(",")
       .map((x) => parseInt(x));

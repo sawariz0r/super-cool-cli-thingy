@@ -14,9 +14,12 @@ const size = getSize(process.argv);
 const instructions = getInstructions(process.argv);
 const startingPos = getStartPos(process.argv);
 
+const hasStartingPos = startingPos.length > 0;
+const hasInstructions = instructions.length > 0;
+
 const c = new Console();
 const t = new Table(size);
-const o = new Object({ position: startingPos });
+const o = new Object(hasStartingPos ? { position: startingPos } : {});
 
 // I would rather initiate this middleware style,
 // using an array of fns and reduceRight
@@ -32,7 +35,7 @@ o.onMove = (move) => {
    * Uncomment the line under
    * to see it in action!
    */
-  //visualizeGrid(t, move)
+  visualizeGrid(t, move);
 
   try {
     if (!t.checkMove(move)) t.fellOutside();
@@ -46,7 +49,6 @@ o.onMove = (move) => {
 /**
  * On to the main part of the program!
  */
-const hasInstructions = instructions.length > 0;
 
 /**
  * If the instructions were provided when
